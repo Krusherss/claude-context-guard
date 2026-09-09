@@ -1,5 +1,7 @@
 # claude-context-guard
 
+> **Archived.** This hook was written for Claude Code's 200K-token context window (April 2025). The local version has since evolved into a multi-hook architecture (compaction serializer, context enforcer, prompt context injector) that addresses the problem differently. This repo is preserved for reference but is no longer maintained. See the approach documented in [governing-an-ai-agent](https://github.com/Krusherss/governing-an-ai-agent) for how the estate evolved.
+
 Warn before Claude Code silently compacts your context window.
 
 Claude Code auto-compacts at ~90% context usage — silently, without warning. You lose tool history, reasoning context, and mid-task state. By the time you notice, it's too late.
